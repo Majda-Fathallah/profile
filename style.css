@@ -1,0 +1,273 @@
+/*fonts and colors*/
+
+body {
+
+  background-color: #FFFAEB;
+  color: white;
+  font-family: 'Neucha', cursive;
+
+}
+
+h1, h2 {
+
+  font-family: 'Anton', sans-serif;
+
+
+}
+
+h1 { 
+
+  color: #FFFAEB;
+
+  font-size: 30px;
+
+
+}
+
+h2 {
+
+  color: #FFFAEB;
+
+}
+
+a{
+
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+
+}
+
+a:hover {
+
+  color: grey;
+
+}
+
+/* Custom design with class */
+
+.container {
+
+	width: 700px;
+	margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+/*cards*/
+
+.card-orange {
+  background-color: #B85C00;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.card-red {
+  background-color: #470C0B;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.card-a { /*white*/
+
+  background: white; 
+  padding: 60px; 
+  margin: 50px; 
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1); 
+  border-radius: 4px;
+  text-align: center;
+
+}
+
+.card-b { /*red*/
+
+  background: #470C0B; 
+  padding: 60px; 
+  margin: 50px; 
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1); 
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card-c { /*orange*/
+
+  background: #B85C00; 
+  padding: 60px; 
+  margin: 50px; 
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1); 
+  border-radius: 4px;
+  text-align: center;
+}
+
+/*image style*/
+.img-circle {
+
+	border-radius: 50%;
+
+}
+
+.round {
+  border:2px;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+
+
+/*buttons*/
+.btn-red {
+	background-color: #470C0B;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+
+}
+
+.btn-red:hover { 
+
+  background-color: grey;
+  color: white;
+
+}
+
+.btn-orange {
+  background-color: #B85C00;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.btn-orange:hover { 
+
+  background-color: grey;
+  color: white;
+
+}
+
+/*lists*/
+
+#introduction p {
+	margin-bottom: 40px;
+
+}
+
+.list-inline { 
+
+  list-style: none;
+  padding-left: 0px;
+
+}
+
+.list-inline li { 
+
+ display: inline;
+ padding: 0px 20px;
+
+
+}
+
+
+/* slideshow travel page */
+
+@keyframes slideshow {
+  10% {left: 0;}
+  20% {left: 0;}
+  30% {left: -100%;}
+  40% {left: -100%;}
+  50% {left: -200%;}
+  60% {left: -200%;}
+  70% {left: -300%;}
+  80% {left: -300%;}
+  90% {left: -400%;}
+  100% {left: -400%}
+}
+
+
+#slider{overflow:hidden;width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+
+@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+
+.imgsize{
+  width: 100;
+  height: 730;
+}
+
+/*menu dance page*/
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #470C0B; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+/*video gallery*/
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*galery for the looks*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.columnimg {
+  float: left;
+  width: 33%;
+  padding-bottom: 20px;
+}
+
+/* Clear floats after image containers */
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
